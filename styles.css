@@ -1,0 +1,297 @@
+/* Global Resets */
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', 'Noto Sans SC', 'Noto Sans JP', 'Roboto',
+    'Trebuchet MS', Arial, Sans-Serif !important;
+  color: #999999 !important;
+  line-height: 1.6;
+  letter-spacing: -0.04em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003c71;
+  font-weight: 700 !important;
+}
+
+p {
+  line-height: 1.7 !important;
+  font-weight: 300 !important;
+}
+
+a {
+  color: #018380 !important;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1182px !important;
+}
+
+/* Promotion */
+
+.promo-content-wrapper {
+  width: 100%;
+  height: 250px;
+}
+
+.promo-1 {
+  background-image: linear-gradient(
+      110deg,
+      #018380c7 0%,
+      #018380c7 50%,
+      rgba(0, 60, 113, 0.57) 50%
+    ),
+    url('./img/cow-slim-1152x250.jpg');
+  width: 100%;
+  min-height: 250px;
+  background-position-x: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo-2 {
+  background-image: linear-gradient(
+      110deg,
+      #018380c7 0%,
+      #018380c7 50%,
+      rgba(0, 60, 113, 0.57) 50%
+    ),
+    url('./img/beach-slim-1152x250.jpg');
+  width: 100%;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-promo {
+  background-color: #ffd100;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+}
+
+.btn-promo:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: #003c71 !important;
+}
+
+/* Card */
+
+/* Rewards */
+
+.row-card {
+  border: 1px solid #003c7150;
+  border-radius: 2px;
+  margin: 0 1px !important;
+}
+
+.img-container {
+  padding: 0 !important;
+}
+
+.img-container img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  max-height: 220px;
+}
+
+.rewards-heading {
+  color: #003c71;
+}
+
+.rewards-subheading {
+  padding: 0 0.9rem;
+}
+
+.cta-primary-btn {
+  background-color: #0174b8;
+  color: #fff !important;
+  padding: 1em 2em;
+  border-radius: 4px;
+}
+
+.cta-primary-btn:hover {
+  color: #fff !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-primary-btn i {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+/* Deals */
+
+.deals-row {
+  padding: 0;
+}
+
+.deals-row a {
+  text-decoration: underline;
+}
+
+.deals-content-wrapper {
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.deals-content-wrapper:hover {
+  border: 1px solid #003c7150;
+  padding-left: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.get-code-btn {
+  display: inline-block;
+  background-color: #ffd100;
+  color: #018380;
+  padding: 0.3em 0.75em;
+  margin-bottom: 1rem;
+}
+
+.get-code-btn i {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+/* Featured Vacations */
+
+.featured-row-fluid {
+  background-color: #eff4f4;
+}
+
+.featured-row {
+  margin-top: 2rem;
+}
+
+.featured-head {
+  margin-top: 1rem;
+  color: #003c71;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-mazatlan::before {
+  content: '$1,200 Maga Pass';
+  color: #333;
+  background-color: #ffd100;
+  padding: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.card-puerta::before {
+  content: 'Kids stay free';
+  color: #333;
+  background-color: #ffd100;
+  padding: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.card-jamaica::before {
+  content: 'Up to $800 credit';
+  color: #333;
+  background-color: #ffd100;
+  padding: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.palm-wrapper {
+  position: relative;
+}
+
+.palm-wrapper::after {
+  content: url('./img/palm.svg');
+  position: absolute;
+  top: -1.4rem;
+  right: 1rem;
+  z-index: 1000;
+  border-radius: 57%;
+  border: 4px solid #fff;
+}
+
+/* Offers */
+
+.row-offers img {
+  width: 100%;
+  overflow: hidden;
+  background-color: #263545;
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+}
+
+.row-offers img:hover {
+  opacity: 1;
+}
+
+.offers-head,
+.offers-subhead {
+  color: #003c71;
+}
+
+/* Footer */
+
+footer {
+  background-color: #263545;
+  border-top: 1px solid #018380;
+  color: #24b781;
+}
+
+.footer-container {
+  padding: 6rem 6rem 2rem 6rem;
+}
+
+.footer-container p {
+  margin: 0;
+
+  font-size: 1.1em;
+}
+
+.footer-container li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.footer-container a {
+  list-style-type: none;
+  font-weight: 100;
+  opacity: 0.8;
+  line-height: 2;
+}
+
+.footer-container a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  font-size: 0.8em;
+
+  opacity: 0.8;
+  padding: 4px;
+}
+
+.copyright i {
+  font-size: 0.7em;
+  margin: 3px;
+}
